@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporting Autistic Females in Secondary Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary: #4f46e5;
+            --secondary: #ec4899;
+            --bg-soft: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--bg-soft);
+            color: #1e293b;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-divider {
+            height: 4px;
+            width: 60px;
+            background: var(--primary);
+            border-radius: 2px;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 top-0 left-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fas fa-brain text-indigo-600 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight hidden md:block">NeuroSupport Framework</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#phenotype" class="text-gray-600 hover:text-indigo-600 font-medium">Phenotype</a>
+                    <a href="#stress" class="text-gray-600 hover:text-indigo-600 font-medium">Stress & Masking</a>
+                    <a href="#alberta" class="text-gray-600 hover:text-indigo-600 font-medium">Alberta Policy</a>
+                    <a href="#strategies" class="text-gray-600 hover:text-indigo-600 font-medium">Strategies</a>
+                </div>
+                <button class="md:hidden text-gray-600 p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-4 py-4 space-y-4 shadow-lg">
+            <a href="#phenotype" class="block text-gray-600">Phenotype</a>
+            <a href="#stress" class="block text-gray-600">Stress & Masking</a>
+            <a href="#alberta" class="block text-gray-600">Alberta Policy</a>
+            <a href="#strategies" class="block text-gray-600">Strategies</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-32 pb-20 px-4 text-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Clinical & Pedagogical Frameworks for Supporting Autistic Females
+            </h1>
+            <p class="text-xl md:text-2xl font-light opacity-90 mb-10 max-w-3xl mx-auto">
+                A Comprehensive Analysis of Neurobiological, Psychosocial, and Educational Requirements in Secondary Education.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#phenotype" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition">Get Started</a>
+                <a href="#strategies" class="border-2 border-white/30 text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition">Teaching Strategies</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+
+        <!-- Intro / Phenotype Section -->
+        <section id="phenotype" class="mb-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">The Female Autism Phenotype (FAP)</h2>
+                    <div class="section-divider"></div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Historically, diagnostic criteria for ASD were developed based on observations of male children. Autistic females frequently present with a unique clinical profile characterized by sophisticated social adaptive strategies, such as camouflaging and masking.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Socially oriented "Special Interests" (e.g., literature, psychology, animals).</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Advanced mimicry of non-verbal cues.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Higher risk of internalizing symptoms (anxiety, depression).</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-indigo-50 p-8 rounded-3xl border border-indigo-100 shadow-inner">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-900">Diagnostic Variance</h3>
+                    <div class="table-container">
+                        <table class="w-full text-sm text-left border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-indigo-200">
+                                    <th class="py-2 text-indigo-700">Category</th>
+                                    <th class="py-2 text-indigo-700">Typical Male</th>
+                                    <th class="py-2 text-indigo-700">FAP Profile</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-indigo-100">
+                                <tr>
+                                    <td class="py-3 font-semibold">Interaction</td>
+                                    <td class="py-3">Overt withdrawal</td>
+                                    <td class="py-3">Scripting/Imitation</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 font-semibold">Interests</td>
+                                    <td class="py-3">Technical/Systemic</td>
+                                    <td class="py-3">Social/Relational</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 font-semibold">Mental Health</td>
+                                    <td class="py-3">Externalizing</td>
+                                    <td class="py-3">Internalizing</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stress and Masking -->
+        <section id="stress" class="mb-20 bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-bold text-gray-900 text-center">The Psychophysiology of Masking</h2>
+            <div class="section-divider mx-auto"></div>
+            <div class="grid md:grid-cols-3 gap-8 mt-10">
+                <div class="text-center p-6 bg-rose-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heartbeat text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">HPA Axis Stress</h4>
+                    <p class="text-sm text-gray-600">Chronic camouflaging leads to increased hair cortisol concentration (HCC) and biological exhaustion.</p>
+                </div>
+                <div class="text-center p-6 bg-blue-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-battery-empty text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Autistic Burnout</h4>
+                    <p class="text-sm text-gray-600">The "invisible" stress of school results in profound exhaustion, often manifesting as school refusal.</p>
+                </div>
+                <div class="text-center p-6 bg-purple-50 rounded-2xl">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-venus text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Puberty Impacts</h4>
+                    <p class="text-sm text-gray-600">Earlier biological maturation in autistic females requires proactive, concrete support systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alberta Framework -->
+        <section id="alberta" class="mb-20">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <h2 class="text-3xl font-bold text-gray-900">The Alberta Model</h2>
+                    <div class="section-divider"></div>
+                    <p class="text-gray-600 mb-4">Inclusive education is defined by an attitude that embraces diversity and ensures meaningful access for all learners.</p>
+                    <div class="bg-indigo-600 text-white p-6 rounded-2xl">
+                        <h4 class="font-bold mb-2">Key Focus: IPP</h4>
+                        <p class="text-sm opacity-90">Individualized Program Plans (IPP) for autistic females must prioritize self-advocacy and social-emotional regulation.</p>
+                    </div>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 gap-4">
+                    <div class="p-6 border-l-4 border-indigo-400 bg-white shadow-sm rounded-r-xl card-hover">
+                        <h5 class="font-bold text-indigo-900">Universal Supports</h5>
+                        <p class="text-gray-600">UDL and differentiated instruction for all students in a grade-level classroom.</p>
+                    </div>
+                    <div class="p-6 border-l-4 border-pink-400 bg-white shadow-sm rounded-r-xl card-hover">
+                        <h5 class="font-bold text-pink-900">Targeted Supports</h5>
+                        <p class="text-gray-600">Social skills groups, sensory breaks, and executive function coaching.</p>
+                    </div>
+                    <div class="p-6 border-l-4 border-purple-400 bg-white shadow-sm rounded-r-xl card-hover">
+                        <h5 class="font-bold text-purple-900">Individualized Supports</h5>
+                        <p class="text-gray-600">High-intensity instruction (e.g., GIST, RISE programs) for complex needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classroom Strategies -->
+        <section id="strategies" class="mb-20">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Pedagogical Scaffolding</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Executive Functioning -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Executive Functioning</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <span class="font-bold text-amber-500">01</span>
+                            <p><strong>Visual Supports:</strong> Externalize memory with checklists and Time Timers.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="font-bold text-amber-500">02</span>
+                            <p><strong>Task Chunking:</strong> Break large worksheets into small, manageable boxes.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="font-bold text-amber-500">03</span>
+                            <p><strong>"If-Then" Planning:</strong> Proactively build cognitive flexibility for common hurdles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sensory Ergonomics -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Sensory Ergonomics</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <span class="font-bold text-emerald-500">Light</span>
+                            <p>Use warm LED lamps; limit wall decor to 30-50% coverage to reduce visual noise.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="font-bold text-emerald-500">Sound</span>
+                            <p>Implement acoustic management with felt strips and designated "quiet zones."</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="font-bold text-emerald-500">Flex</span>
+                            <p>Provide wobble stools, bean bags, or standing desks for tactile/motor regulation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Interventions -->
+        <section class="mb-20 py-12 bg-indigo-900 rounded-[3rem] text-white overflow-hidden relative">
+            <div class="px-8 md:px-16 relative z-10">
+                <div class="max-w-3xl">
+                    <h2 class="text-3xl font-bold mb-6">Relational Competence: The PEERS® Model</h2>
+                    <p class="text-lg opacity-80 mb-8 leading-relaxed">
+                        Rather than "normalization," the goal is developing authentic social skills through structured evidence-based practices like the PEERS® program.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 bg-white/10 p-4 rounded-xl border border-white/10">
+                            <i class="fas fa-comments text-pink-400"></i>
+                            <span>Conversation Management</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/10 p-4 rounded-xl border border-white/10">
+                            <i class="fas fa-shield-alt text-pink-400"></i>
+                            <span>Conflict & Bullying Etiquette</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/10 p-4 rounded-xl border border-white/10">
+                            <i class="fas fa-user-friends text-pink-400"></i>
+                            <span>Relationship Safety</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/10 p-4 rounded-xl border border-white/10">
+                            <i class="fas fa-users text-pink-400"></i>
+                            <span>Peer Interaction Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative circle -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-pink-500/20 rounded-full blur-3xl"></div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p class="mb-4 font-semibold text-gray-900">Moving Toward a Neuro-Affirming Framework</p>
+            <p>© 2025 Education Advocacy Framework. All rights reserved.</p>
+            <p class="mt-2">Synthesized from "Supporting Autistic Females in Secondary Education" (2024/2025 Clinical Research)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth reveal on scroll logic can be added here
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
